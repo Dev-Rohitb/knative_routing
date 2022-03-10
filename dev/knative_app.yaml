@@ -4,12 +4,13 @@ metadata:
   name: knative
 spec:
   template:
-    spec:
-      containerConcurrency: 1
+    #spec:
+     # containerConcurrency: 1
     metadata:
       # This is the name of our new "Revision," it must follow the convention {service-name}-{revision-name}
       name: knative-appv2
     spec:
+      containerConcurrency: 1
       containers:
         - image: borkarrohit/knative-demo-app:v2
           ports:
