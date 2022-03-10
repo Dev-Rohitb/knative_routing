@@ -7,6 +7,8 @@ spec:
     metadata:
       # This is the name of our new "Revision," it must follow the convention {service-name}-{revision-name}
       name: knative-appv2
+      spec:
+        containerConcurrency: 1
     spec:
       containers:
         - image: borkarrohit/knative-demo-app:v2
