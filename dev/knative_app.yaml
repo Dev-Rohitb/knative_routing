@@ -4,8 +4,6 @@ metadata:
   name: knative
 spec:
   template:
-    #spec:
-     # containerConcurrency: 1
     metadata:
       # This is the name of our new "Revision," it must follow the convention {service-name}-{revision-name}
       name: knative-appv2
