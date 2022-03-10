@@ -9,6 +9,6 @@ spec:
       name: knative-appv1
     spec:
       containers:
-        - image: knative-demo-app:v1
+        - image: borkarrohit/knative-demo-app:v1
           ports:
             - containerPort: 80
