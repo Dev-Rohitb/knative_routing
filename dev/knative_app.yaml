@@ -5,11 +5,12 @@ metadata:
 spec:
   template:
     metadata:
+      annotations:
+        autoscaling.knative.dev/target: "1"
       # This is the name of our new "Revision," it must follow the convention {service-name}-{revision-name}
-      name: knative-appv2
+      name: knative-appv1
     spec:
-      containerConcurrency: 1
       containers:
-        - image: borkarrohit/knative-demo-app:v2
+        - image: borkarrohit/knative-demo-app:v1
           ports:
             - containerPort: 80
