@@ -5,8 +5,6 @@ metadata:
 spec:
   template:
     metadata:
-      annotations:
-        autoscaling.knative.dev/target: "1"
       # This is the name of our new "Revision," it must follow the convention {service-name}-{revision-name}
       name: knative-appv1
     spec:
