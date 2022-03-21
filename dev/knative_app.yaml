@@ -11,4 +11,4 @@ spec:
       containers:
         - image: borkarrohit/knative-demo-app:v1
           ports:
-            - containerPort: 8080
+            - containerPort: 80
