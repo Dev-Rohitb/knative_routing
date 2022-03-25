@@ -12,3 +12,8 @@ spec:
         - image: borkarrohit/knative-demo-app:v2
           ports:
             - containerPort: 80
+	 traffic:
+	  - revisionName: knative-appv1
+	    percent: 50
+	  - revisionName: knative-appv2
+      percent: 50
