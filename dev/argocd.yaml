@@ -16,3 +16,8 @@ spec:
     automated:
       prune: true
       selfHeal: true
+traffic:
+- revisionName: knative-appv1
+  percent: 50
+- revisionName: knative-appv2
+  percent: 50
