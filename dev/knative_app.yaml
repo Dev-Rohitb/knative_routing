@@ -6,9 +6,9 @@ spec:
   template:
     metadata:
       # This is the name of our new "Revision," it must follow the convention {service-name}-{revision-name}
-      name: knative-appv1
+      name: knative-appv2
     spec:
       containers:
-        - image: borkarrohit/knative-demo-app:v1
+        - image: borkarrohit/knative-demo-app:v2
           ports:
             - containerPort: 80
